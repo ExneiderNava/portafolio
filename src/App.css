@@ -1,0 +1,97 @@
+/* src/App.css */
+
+/* Reset básico para asegurar el fondo negro absoluto */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000; /* Asegura el fondo negro detrás de las partículas */
+  overflow-x: hidden;
+}
+
+/* El contenedor principal de tu portafolio */
+.portfolio {
+  position: relative; /* Clave para el fondo absoluto de partículas y el glow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* Asegura que todo el texto por defecto sea blanco */
+  overflow: hidden; /* Evita scrolls accidentales */
+}
+
+/* --- EL EFECTO DE ILUMINACIÓN REACTIVA (GLOW) --- */
+/* Creamos un "spotlight" invisible que sigue al cursor */
+/* Modifica esta parte en tu App.css */
+.portfolio::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    800px circle at var(--x, 0px) var(--y, 0px), /* 1. Aumentamos el radio a 800px */
+    rgba(0, 0, 255, 0.4), /* 2. Subimos la opacidad de 0.15 a 0.4 (o 0.5 si quieres más brillo) */
+    transparent 60%       /* 3. Extendemos el desvanecimiento al 60% */
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* --- ESTILOS DE TU CONTENIDO (ASEGURANDO VISIBILIDAD) --- */
+
+/* Badge superior */
+.header-badge {
+  background-color: #0000FF; /* Fondo azul eléctrico */
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative; /* Asegura que el z-index funcione */
+  z-index: 10; /* Por encima del efecto Glow */
+}
+
+.header-badge p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ffffff; /* Texto blanco */
+  font-weight: bold;
+}
+
+/* Título principal */
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 0 0 50px 0;
+  color: #ffffff; /* Texto blanco */
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* Grid de servicios */
+.services-grid {
+  display: flex;
+  gap: 25px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Tarjetas de servicios */
+.service-card {
+  width: 220px;
+  height: 280px;
+  background-color: white;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en las tarjetas */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 255, 0.5); /* Sombra azul eléctrico al pasar el mouse */
+}
