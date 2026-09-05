@@ -7,7 +7,7 @@ const About = () => {
     const aboutData = data.about;
 
     const title = lang === 'en' ? aboutData.title : 'Sobre mí';
-    const description = lang === 'en' ? aboutData.description : 'Soy un desarrollador web apasionado con experiencia en la construcción de aplicaciones web modernas y responsivas. Me encanta aprender nuevas tecnologías y resolver problemas complejos.';
+    const description = lang === 'en' ? aboutData.description : 'Desarrollador de Software con experiencia real en producción, especializado en la creación, mantenimiento y optimización de plataformas web y sistemas de comercio electrónico. Competente en entornos backend y frontend utilizando PHP, JavaScript, HTML, CSS y Python. Cuento con destreza en la gestión de servidores, configuración de dominios, bases de datos (MySQL, phpMyAdmin) y soporte técnico integral. Proactivo, con capacidad de liderazgo y habituado a trabajar en equipo bajo estándares de alta eficiencia.';
 
     return (
         <section id="about" className="section about-section">

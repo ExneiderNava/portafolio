@@ -343,6 +343,8 @@ body {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  object-position: center;
+  background-color: #0a0a0a;
 }
 
 .experience-content {
