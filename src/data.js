@@ -2,7 +2,7 @@ export const data = {
     about: {
         title: "About Me",
         description: "Software developer with real-world production experience, specializing in the creation, maintenance, and optimization of web platforms and e-commerce systems. Proficient in backend and frontend environments using PHP, JavaScript, HTML, CSS, and Python. Skilled in server management, domain configuration, databases (MySQL, phpMyAdmin), and comprehensive technical support. Proactive, with leadership skills and experienced in working as part of a team to meet high efficiency standards.",
-        image: "./public/perfil_exneider.webp"
+        image: "./perfil_exneider.webp"
     },
     experience: [
         {
@@ -11,7 +11,7 @@ export const data = {
             company: "Cerebiia",
             period: "06/2026 - 07/2026",
             description: "An ERP software system was built for the centralization of data and the improvement of manufacturing processes, whose backend was developed under a hexagonal architecture using the Django framework along with PostgreSQL databases, while the frontend was implemented with React and TypeScript, making use of web components and hooks for API consumption; additionally, the development lifecycle was managed with Git, applying best practices such as conventional commits and branch management, and API endpoint testing and validation was carried out using Postman, complementing agile task management through Jira.",
-            image: "./public/logo_cerebiia.webp"
+            image: "./logo_cerebiia.webp"
         },
         {
             id: 2,
@@ -19,7 +19,7 @@ export const data = {
             company: "Ebenezer School",
             period: "01/2025 - 02/2026",
             description: "Institutional websites and internal projects were developed and optimized using PHP, HTML, CSS, and JavaScript, while cloud infrastructure was comprehensively managed, administering Hostinger servers, domains, and corporate emails; additionally, Moodle-based educational platforms were administered and configured, including user and content management, relational databases were designed, administered, and queried to support applications, and comprehensive technical support was provided to optimize the performance of hardware and software within the technological infrastructure.",
-            image: "./public/logo_ebenezer.webp"
+            image: "./logo_ebenezer.webp"
         },
         {
             id: 3,
@@ -27,7 +27,7 @@ export const data = {
             company: "Plan B Investments S.A.S",
             period: "09/2023 - 12/2024",
             description: "Productivity and inventory data analysis and management were carried out using the SIESA ERP system, with administrative process optimization focused on improving operational workflow efficiency; additionally, digital inventory control and monitoring of critical variables were performed to ensure information integrity, dispatch operations were supervised under quality standards to guarantee compliance with operational processes, resulting in a promotion to the Logistics Support position due to strong performance in problem-solving and organization.",
-            image: "./public/tiendasisimo.webp"
+            image: "./tiendasisimo.webp"
         }
     ],
     projects: [
