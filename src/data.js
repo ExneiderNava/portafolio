@@ -54,7 +54,8 @@ export const data = {
         title: "Contact Me",
         email: "exneidernava9@gmail.com",
         github: "https://github.com/ExneiderNava",
-        linkedin: "www.linkedin.com/in/exneider-nava",
-        WhastsApp: "https://wa.me/3167221636"
+        linkedin: "https://www.linkedin.com/in/exneider-nava",
+        whatsapp: "https://wa.me/3167221636",
+        gmail: "mailto:exneidernava9@gmail.com"
     }
 };
